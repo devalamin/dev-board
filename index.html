@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+
+    <!-- DaisyUi links -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- css -->
+    <style>
+        body {
+            font-family: "Roboto", serif;
+            background-color: seashell;
+        }
+    </style>
+</head>
+<!-- nav part start -->
+
+<body>
+
+    <header>
+        <nav class="bg-white w-11/12 mx-auto p-4 rounded-lg">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <img src="./assets/logo.png" alt="">
+                    <h3 class="text-2xl"><span>Dev</span> <span class="font-bold">Board</span></h3>
+                </div>
+                <div class="flex items-center space-x-5">
+                    <img src="./assets/checkbox.png" alt="">
+                    <p id="completed-task" class="font-bold text-2xl">25</p>
+                    <button><i class="text-teal-700 text-xl font-bold fa-solid fa-palette"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="w-11/12 mx-auto">
+        <div class="mt-4 relative">
+            <div class="flex justify-between">
+                <div class="w-9/12">
+                    <div class="h-24 flex gap-2 items-center justify-between">
+                        <div class="h-full p-4 bg-slate-200 rounded-lg">
+                            <div class="flex space-x-2 items-center">
+                                <div><i class="fa-solid fa-square-check"></i></div>
+                            <p>Task Assigned</p>
+                            </div>
+                            <h2 id="assigned-task" class="text-center font-bold text-xl">05</h2>
+                        </div>
+                        <div
+                            class="text-white p-4 rounded-lg bg-gradient-to-tr from-[#3752FD] to-[#9BA8F8] flex items-center w-3/6">
+                            <div><img src="./assets/board.png" alt=""></div>
+                            <p>Discover Something New Today</p>
+                        </div>
+                        <div class="flex items-center space-x-2 p-4 w-2/12 bg-slate-200 rounded-lg h-full">
+                            <div><img src="./assets/calender.png" alt=""></div>
+                        <h4 id="heading-date">25 Feb 2025</h4>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="border-2 w-2/12 text-center space-x-2 absolute right-0 top-0 h-screen">
+                  <p class="mb-3 font-bold p-2"><i class="fa-solid fa-clock-rotate-left"></i> Activity Log</p>
+                <button class="btn btn-primary">Clear History</button>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <section class="mt-8 pb-8 w-9/12">
+            <div class="divider"></div>
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-slate-200 card p-5 rounded-lg">
+                    <span class="bg-white px-4 py-2 rounded-md">ShopEase</span>
+                    <h2 class="title text-xl my-5">Fix Mobile Button Issue</h2>
+                    <p class="rounded-md bg-white p-4">Debug using Chrome <br>DevTools, check for overlapping</p>
+                    <div class="mt-4 flex items-center justify-between">
+                        <div class="my-3">
+                            <p>Deadline</p>
+                            <h4 class="text-lg font-bold">21 March 2025</h4>
+                        </div>
+                        <button class="btn btn-primary">Complete</button>
+                    </div>
+                </div>
+                <div class="bg-slate-200 card p-5 rounded-lg">
+                    <span class="bg-white px-4 py-2 rounded-md">CloudSync</span>
+                    <h2 class="title text-xl my-5">Add Dark Mode</h2>
+                    <p class="rounded-md bg-white p-4">Store The users preferences <br>In LocalStorage check for overlapping</p>
+                    <div class="mt-4 flex items-center justify-between">
+                        <div class="my-3">
+                            <p>Deadline</p>
+                            <h4 class="text-lg font-bold">21 March 2025</h4>
+                        </div>
+                        <button class="btn btn-primary">Complete</button>
+                    </div>
+                </div>
+                <div class="bg-slate-200 card p-5 rounded-lg">
+                    <span class="bg-white px-4 py-2 rounded-md">SwiftPlay</span>
+                    <h2 class="title text-xl my-5">Optimize Home Page</h2>
+                    <p class="rounded-md bg-white p-4">Debug using Chrome <br>DevTools, check for overlapping</p>
+                    <div class="mt-4 flex items-center justify-between">
+                        <div class="my-3">
+                            <p>Deadline</p>
+                            <h4 class="text-lg font-bold">21 March 2025</h4>
+                        </div>
+                        <button class="btn btn-primary">Complete</button>
+                    </div>
+                </div>
+                <div class="bg-slate-200 card p-5 rounded-lg">
+                    <span class="bg-white px-4 py-2 rounded-md">Google LLC</span>
+                    <h2 class="title text-xl my-5">Integrate OpenAI API</h2>
+                    <p class="rounded-md bg-white p-4">Debug using Chrome <br>DevTools, check for overlapping</p>
+                    <div class="mt-4 flex items-center justify-between">
+                        <div class="my-3">
+                            <p>Deadline</p>
+                            <h4 class="text-lg font-bold">21 March 2025</h4>
+                        </div>
+                        <button class="btn btn-primary">Complete</button>
+                    </div>
+                </div>
+                <div class="bg-slate-200 card p-5 rounded-lg">
+                    <span class="bg-white px-4 py-2 rounded-md">Glassdoar</span>
+                    <h2 class="title text-xl my-5">Improve Jon Searching </h2>
+                    <p class="rounded-md bg-white p-4">Debug using Chrome <br>DevTools, check for overlapping</p>
+                    <div class="mt-4 flex items-center justify-between">
+                        <div class="my-3">
+                            <p>Deadline</p>
+                            <h4 class="text-lg font-bold">21 March 2025</h4>
+                        </div>
+                        <button class="btn btn-primary">Complete</button>
+                    </div>
+                </div>
+                <div class="bg-slate-200 card p-5 rounded-lg">
+                    <span class="bg-white px-4 py-2 rounded-md">Meta</span>
+                    <h2 class="title text-xl my-5">Add New Emoji</h2>
+                    <p class="rounded-md bg-white p-4">Debug using Chrome <br>DevTools, check for overlapping</p>
+                    <div class="mt-4 flex items-center justify-between">
+                        <div class="my-3">
+                            <p>Deadline</p>
+                            <h4 class="text-lg font-bold">21 March 2025</h4>
+                        </div>
+                        <button class="btn btn-primary">Complete</button>
+                    </div>
+                </div>
+                
+                
+               
+                
+                
+            </div>
+        </section>
+        
+    </main>
+
+    <script src="https://kit.fontawesome.com/f5e67f8077.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
