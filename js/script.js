@@ -46,4 +46,13 @@ cards.forEach(card => {
 document.getElementById('clear-history').addEventListener('click', function () {
     const historyDiv = document.getElementById('history');
     historyDiv.innerHTML = '';
-})
+});
+
+
+const bgColors = ['#edede9', '#d6ccc2', '#f5ebe0', '#e3d5ca', '#d5bdaf', '#e9edc9', '#cce3de'];
+let index = 0;
+document.getElementById('color-change-btn').addEventListener('click', function () {
+    document.body.style.backgroundColor = bgColors[index];
+    // index++
+    index = (index + 1) % bgColors.length
+});
