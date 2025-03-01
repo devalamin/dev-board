@@ -5,7 +5,12 @@ let assignedValue = parseInt(assignedTask.innerText)
 let CompletedValue = parseInt(completedTask.innerText)
 
 const headingDate = document.getElementById('heading-date')
-headingDate.innerText = new Date().toLocaleDateString('en-us')
+headingDate.innerText = new Date().toLocaleDateString('en-us',{
+    weekday: 'short', 
+    day: 'numeric', 
+    month: 'short', 
+    year: 'numeric'
+})
 
 const cards = document.querySelectorAll('.card')
 
@@ -20,7 +25,6 @@ cards.forEach(card => {
 
     button.addEventListener('click', function () {
 
-
         assignedValue--;
         CompletedValue++;
 
@@ -33,7 +37,7 @@ cards.forEach(card => {
         p.innerText = `You Have completed ${heading.innerText} task at ${new Date().toLocaleTimeString()}`;
         history.appendChild(p)
         if (assignedValue == 0) {
-            alert('Completed Every Task')
+            alert('You Have Completed Every Task')
             
         }
 
@@ -41,6 +45,8 @@ cards.forEach(card => {
 
 });
 
+
+// clearing history
 document.getElementById('clear-history').addEventListener('click', function () {
     const historyDiv = document.getElementById('history');
 
@@ -48,6 +54,8 @@ document.getElementById('clear-history').addEventListener('click', function () {
 });
 
 
+
+// changing theme dynamically
 const bgColors = ['#edede9', '#d6ccc2', '#f5ebe0', '#e3d5ca', '#d5bdaf', '#e9edc9', '#cce3de'];
 let index = 0;
 document.getElementById('color-change-btn').addEventListener('click', function () {
