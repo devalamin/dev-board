@@ -20,24 +20,22 @@ cards.forEach(card => {
 
     button.addEventListener('click', function () {
 
-        if (assignedValue <= 1) {
-            alert('Completed Every Task')
-            if (assignedValue === 0) {
-                return
-            }
 
-        }
-        assignedValue -= 1
-        CompletedValue += 1
+        assignedValue--;
+        CompletedValue++;
 
         assignedTask.innerText = assignedValue
         completedTask.innerText = CompletedValue
         alert('Task Completed')
         button.disabled = true;
+        button.innerText = 'Completed'
 
         p.innerText = `You Have completed ${heading.innerText} task at ${new Date().toLocaleTimeString()}`;
         history.appendChild(p)
-
+        if (assignedValue == 0) {
+            alert('Completed Every Task')
+            
+        }
 
     });
 
@@ -45,7 +43,7 @@ cards.forEach(card => {
 
 document.getElementById('clear-history').addEventListener('click', function () {
     const historyDiv = document.getElementById('history');
-    
+
     historyDiv.innerHTML = '';
 });
 
