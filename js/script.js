@@ -45,6 +45,7 @@ cards.forEach(card => {
 
 document.getElementById('clear-history').addEventListener('click', function () {
     const historyDiv = document.getElementById('history');
+    
     historyDiv.innerHTML = '';
 });
 
@@ -56,3 +57,5 @@ document.getElementById('color-change-btn').addEventListener('click', function (
     // index++
     index = (index + 1) % bgColors.length
 });
+
+

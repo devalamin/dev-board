@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+
+    <!-- DaisyUi links -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- css -->
+    <style>
+        body {
+            font-family: "Roboto", serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="bg-white w-11/12 mx-auto p-4 rounded-lg">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <img src="./assets/logo.png" alt="">
+                    <h3 class="text-2xl"><span>Dev</span> <span class="font-bold">Board</span></h3>
+                </div>
+                <div class="flex items-center space-x-5">
+                    <button class="text-white btn btn-primary"><a href="./index.html">Back To desk</a></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="w-11/12 mx-auto mt-5 bg-slate-100 p-5 rounded-lg">
+            <div>
+                <h3 class="font-bold text-xl"> What are the different ways to select an element in the DOM?</h3>
+            </div>
+            <div class="divider"></div>
+            <div>
+                <p class="w-1/3">There are multiple ways to select the element in the dom. such
+                    as,getElementById(),getElementsByClassName(),getElementsByTagName(),querySelector(),querySelectorAll()
+                </p>
+            </div>
+        </section>
+        <section class="w-11/12 mx-auto mt-5 bg-slate-100 p-5 rounded-lg">
+            <div>
+                <h3 class="font-bold text-xl">What is the difference between innerHTML, innerText, and textContent ?
+                </h3>
+            </div>
+            <div class="divider"></div>
+            <div>
+                <p class="w-2/4">There are some notable difference between innerHTML,innerText and textContent.
+                    <br>
+                    as we know <b>innerHTML</b> returns all html tags along with all text that is contained by an
+                    element.
+                    <br>
+                    on the other hand <b>innerText</b> returns all text contained by an element.
+                    <br>
+                    and <b>TextContent</b> is all text contained by an element and all its children
+                </p>
+            </div>
+        </section>
+        <section class="w-11/12 mx-auto mt-5 bg-slate-100 p-5 rounded-lg">
+            <div>
+                <h3 class="font-bold text-xl">What is event delegation in the DOM?</h3>
+            </div>
+            <div class="divider"></div>
+            <div>
+                <p class="w-2/4">
+                    Event Delegation is a pattern based upon the concept of Event Bubbling. It is an event-handling
+                    pattern that allows us to handle events at a higher level in the DOM tree other than the level
+                    where the event was first received
+                </p>
+            </div>
+        </section>
+        <section class="w-11/12 mx-auto mt-5 bg-slate-100 p-5 rounded-lg">
+            <div>
+                <h3 class="font-bold text-xl">What is event bubbling in the DOM?</h3>
+            </div>
+            <div class="divider"></div>
+            <div>
+                <p class="w-2/4">
+                    Event bubbling is a mechanism where an event triggered on a child element propagates
+                    upward through its ancestors in the DOM. It allows parent elements to respond to events triggered by
+                    their child elements.if we don't want to trigger the parent elements, we can use stopPropagation()
+                </p>
+            </div>
+        </section>
+        <section class="w-11/12 mx-auto mt-5 bg-slate-100 p-5 rounded-lg">
+            <div>
+                <h3 class="font-bold text-xl">How do you create, add, and remove elements using JavaScript?</h3>
+            </div>
+            <div class="divider"></div>
+            <div>
+                <p class="w-2/4">
+                  I can create an element in dom using document.createElement() method.
+                  <br>
+                  I can add an elements in dom using parent.appendChild() method.
+                  <br>
+                  Also I can remove an elements using parent.removeChild() method
+                </p>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="./js/blog.js"></script>
+</body>
+
+</html>
