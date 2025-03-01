@@ -57,11 +57,11 @@ document.getElementById('clear-history').addEventListener('click', function () {
 
 // changing theme dynamically
 const bgColors = ['#edede9', '#d6ccc2', '#f5ebe0', '#e3d5ca', '#d5bdaf', '#e9edc9', '#cce3de'];
-let index = 0;
+let i = 0;
 document.getElementById('color-change-btn').addEventListener('click', function () {
-    document.body.style.backgroundColor = bgColors[index];
+    document.body.style.backgroundColor = bgColors[i];
     // index++
-    index = (index + 1) % bgColors.length
+    i = (i + 1) % bgColors.length
 });
 
 
