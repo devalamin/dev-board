@@ -22,7 +22,7 @@ function completeTask(event){
     assignedTask.innerText = assignedValue;
     completedTask.innerText = CompletedValue;
 
-    alert('Task Completed')
+    alert('Board Updated Successfully')
         button.disabled = true;
         button.innerText = 'Completed'
 
